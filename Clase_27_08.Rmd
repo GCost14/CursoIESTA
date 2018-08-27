@@ -1,0 +1,23 @@
+---
+title: "Clase 27/08"
+author: "Guillermina"
+date: "27 de agosto de 2018"
+output: html_document
+---
+
+```{r}
+N <- rpois(1,90)
+
+xi <- runif(N, 0, 1)
+
+yi <- runif(N, 0, 1)
+
+```
+
+```{r, echo=FALSE}
+a <- data.frame(xi, yi)
+library(knitr)
+kable(summary(a))
+```
+
+
